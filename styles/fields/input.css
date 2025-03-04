@@ -16,13 +16,14 @@ button {
         font: 400 1rem/1.4 var(--font-familly-open);
         color: var(--input-placeholder);
     }
+
 }
 
 label {
     font: var(--text-body-md);
     color: var(--text-body);
 
-    display: block;
+
     margin-bottom: .75rem;
 }
 

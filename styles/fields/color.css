@@ -1,0 +1,42 @@
+/* .colors {
+    display: flex;
+
+
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+    }
+} */
+
+
+.input-wrapper {
+    & p {
+        margin-bottom: 1rem;
+    }
+
+    .colors-wrapper {
+        display: flex;
+        gap: 1rem;
+
+        position: relative;
+
+        & p {
+            margin-bottom: 1rem;
+        }
+
+        & label {
+            padding-bottom: 1rem;
+        }
+
+        & input {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+    }
+}
