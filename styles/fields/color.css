@@ -1,18 +1,3 @@
-/* .colors {
-    display: flex;
-
-
-    position: relative;
-
-    & input,
-    & input:focus,
-    & input:hover {
-        all: unset;
-        position: absolute;
-    }
-} */
-
-
 .input-wrapper {
     & p {
         margin-bottom: 1rem;
