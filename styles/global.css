@@ -42,17 +42,45 @@
 
 
     --font-familly-leckerli: 'Leckerli One', cursive;
-    --text-logo: 400 2.5rem/120% var(--font-familly-leckerli);
+    --text-logo: 400 2.5rem var(--font-familly-leckerli);
 
 
     --font-familly-baloo: 'Baloo 2', cursive;
-    --text-heading-md-baloo: 700 1.75rem/120% var(--font-familly-baloo);
-    --text-heading-sm-baloo: 700 1.125rem/120% var(--font-familly-baloo);
+    --text-heading-md-baloo: 700 1.75rem/1.2 var(--font-familly-baloo);
+    --text-heading-sm-baloo: 700 1.125rem/1.2 var(--font-familly-baloo);
 
 
-    --font-text: 'Open Sans', sans-serif;
-    --text-body-md: 400/600 1rem/140% var(--font-text);
-    --text-body-sm: 400/600 .875rem/140% var(--font-text);
-    --text-body-xs: 400/600 .75rem/140% var(--font-text);
+    --font-familly-open: 'Open Sans', sans-serif;
+    --text-body-md: 400 1rem/1.4 var(--font-familly-open);
+    --text-body-sm: 400 .875rem/1.4 var(--font-familly-open);
+    --text-body-xs: 400 .75rem/1.4 var(--font-familly-open);
 
+}
+
+
+body {
+    overflow: hidden;
+    /* Evita que a rolagem apareça */
+
+    font: var(--text-body-sm);
+    color: var(--text-body);
+}
+
+h1 {
+    font: var(--text-logo);
+    color: var(--pink);
+}
+
+h2 {
+    font: var(--text-heading-md-baloo);
+    color: var(--text-heading);
+}
+
+h3 {
+    font: var(--text-body-md);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
