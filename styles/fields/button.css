@@ -1,0 +1,21 @@
+button {
+    /* resetar todos os estilos padroes do browser */
+    all: unset;
+    font-weight: 500;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 26rem;
+
+
+    &.bnt-primary {
+        color: white;
+        background-color: var(--color-brand-dark);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-brand-light)
+        }
+    }
+}
