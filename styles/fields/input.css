@@ -23,7 +23,6 @@ label {
     font: var(--text-body-md);
     color: var(--text-body);
 
-
     margin-bottom: .75rem;
 }
 
@@ -33,4 +32,30 @@ input [type="datetime-local"]:focus-within {
     outline: .125rem solid var(--color-brand-mid);
     border: .125 solid var(--color-brand-mid);
     outline-offset: .1px;
+}
+
+
+input {
+
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    /* se o input estiver invalido, e tiver a classe error */
+    &[required]+.error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+
+        color: var(--danger);
+
+        margin-top: .25rem;
+    }
+
+    &:not(:focus):valid+.error {
+        display: none;
+    }
+
+
 }
