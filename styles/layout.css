@@ -29,5 +29,20 @@ aside {
 }
 
 main {
+    overflow: auto;
     padding: 5rem;
+    background-color: var(--shape-background);
+
+
+    /* css nesting */
+    & .main-container {
+        width: 35rem;
+        margin-left: auto;
+        margin: auto;
+    }
+
+    & h2 {
+        margin-bottom: 2.5rem;
+    }
+
 }

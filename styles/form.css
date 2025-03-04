@@ -1,0 +1,25 @@
+@import url(fields/index.css);
+
+
+form {
+    margin-top: 3rem;
+}
+
+fieldset {
+    border: none;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+.legend-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    & img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

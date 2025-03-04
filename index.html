@@ -31,13 +31,72 @@
 
         <main>
             <div class="main-container">
+                <h2>Crie seu convite</h2>
 
+                <form action="" method="post" enctype="multipart/form-data">
 
+                    <!-- Informações sobre o evento -->
+                    <fieldset>
+                        <legend>
+                            <div class="legend-container">
+                                <img src="./assets/icons/calendar.svg" alt="calendario">
+                                <h4>Sobre o evento</h4>
+                            </div>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="eventname">Título</label>
+                            <input type="text" id="eventname" name="eventname" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-2">
+                                <label for="start-time">Início</label>
+                                <input type="datetime-local" id="start-time" name="start-time">
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="end-time">Fim</label>
+                                <input type="datetime-local" id="end-time" name="end-time">
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="radio-wrapper flex-2">
+                                <div class="input-wrapper">
+                                    <label for="event-type">Tipo</label>
+                                    <div class="event-type-box">
+                                        <input type="radio" id="presencial" name="event-type" value="presencial"
+                                            checked>
+                                        <label for="presencial" class="event-btn">
+                                            <img src="./assets/icons/building-2.svg" alt="Presencial" class="icon">
+                                            Presencial
+                                        </label>
+
+                                        <input type="radio" id="online" name="event-type" value="online">
+                                        <label for="online" class="event-btn">
+                                            <img src="./assets/icons/video.svg" alt="Online" class="icon"> Online
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="location">Local</label>
+                                <input type="text" id="location" name="location" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea id="description" name="description" cols="30" rows="5"
+                                placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
-
     </div>
-
 </body>
 
 </html>

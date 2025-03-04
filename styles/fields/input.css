@@ -1,0 +1,35 @@
+input,
+textarea,
+button {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+
+    padding: .81rem 1rem;
+
+    color: var(--input-placeholder);
+    font: 400 1rem/1.4 var(--font-familly-open);
+
+    &::placeholder {
+        font: 400 1rem/1.4 var(--font-familly-open);
+        color: var(--input-placeholder);
+    }
+}
+
+label {
+    font: var(--text-body-md);
+    color: var(--text-body);
+
+    display: block;
+    margin-bottom: .75rem;
+}
+
+input:focus,
+textarea:focus,
+input [type="datetime-local"]:focus-within {
+    outline: .125rem solid var(--color-brand-mid);
+    border: .125 solid var(--color-brand-mid);
+    outline-offset: .1px;
+}
