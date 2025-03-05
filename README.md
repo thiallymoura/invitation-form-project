@@ -1,7 +1,7 @@
 <h1> 🚀 Desafio prático - Formulário de Convite</h1>
 
 <p align="center">
-  <img alt="License" src="">
+  <img alt="License" src="./assets/readme.png">
 </p>
 
 ## 🚀 Tecnologias
