@@ -8,7 +8,7 @@
 
 
 aside {
-    background: url('../assets/background.png') no-repeat center center/cover;
+    background: url(../assets/background.svg) no-repeat center center/cover;
     padding: 2rem;
 
     & .aside-container {
